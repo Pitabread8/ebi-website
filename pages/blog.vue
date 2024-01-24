@@ -1,6 +1,5 @@
 <template>
   <div>
-    <NavBar />
-    <NuxtPage />
+    <p>Blog Home</p>
   </div>
 </template>
