@@ -1,5 +1,11 @@
 <template>
-  <div>
-    <p>Blog Home</p>
-  </div>
+  <main>
+    <ContentList path="/blog" v-slot="{ list }">
+      <div v-for="article in list" :key="article._path">
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.description }}</p>
+        <p>{{ article.date }}</p>
+      </div>
+    </ContentList>
+  </main>
 </template>
